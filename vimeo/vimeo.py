@@ -51,7 +51,7 @@ class VimeoBlock(XBlock):
         data = pkg_resources.resource_string(__name__, path)
         return data.decode("utf8")
 
-    def load_resource(self, path):
+    def load_resource(self, resource_path):
         """
         Gets Content of a Resource and Encodes it to UTF-8 For Python 2.7
         """
